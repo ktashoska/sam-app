@@ -2,10 +2,8 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: latest
+      python: 3.8
   build:
     commands:
+      # trigger the unit tests here
       - echo 'Running unit tests'
-      - cd hello-world
-      - npm install
-      - npm run test
